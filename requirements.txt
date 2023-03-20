@@ -1,0 +1,10 @@
+flask
+flask-sqlalchemy
+flask-login
+flask-migrate
+python-dotenv
+psycopg2
+werkzeug
+gunicorn
+flask-marshmallow
+marshmallow-sqlalchemy
