@@ -12,8 +12,17 @@ def get_data():
     result = station_schema_2.dump(data)
 
     return jsonify(result)
-    
 
+@station_api.get('/data/<id>')
+def get_id(id):
+    station_schema = StationSchema()
+    data = StationData.query.get(id)
+
+    return station_schema.jsonify(data)
+
+
+
+    
 @station_api.post('/data')
 def create_data():
     station_schema = StationSchema()
