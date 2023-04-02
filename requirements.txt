@@ -8,3 +8,5 @@ werkzeug
 gunicorn
 flask-marshmallow
 marshmallow-sqlalchemy
+Flask-JWT-Extended 
+bcrypt
